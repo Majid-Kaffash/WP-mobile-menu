@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile Menu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>It can be much more better if you open this page with your mobile or change your browser resolution to the mobile's resolution</h1>
+    <h2>THIS IS THE MENU :</h2>
+    <div class="menu-btn">
+
+    <!-- I'M NOT SURE ABOUT THIS KIND OF SVG IMPORTING :-D ! -->
+
+      <svg id="edit-svg" style="width: 10%; " mi-view-box="0 0 1024 1024" viewBox="0 0 1024 1024">
+		<rect fill="white" x="0" y="0" mi-width="1024" mi-height="1024" width="1024" height="1024"></rect>
+		<g>
+          <path class="cursor-pointer " ng-repeat="path in icon.paths track by tempIds[$index]" mi-d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z" mi-fill="inherit" mi-stroke="inherit" mi-stroke-width="inherit" mi-stroke-linejoin="inherit" mi-stroke-linecap="inherit" mi-stroke-miterlimit="inherit" mi-opacity="1" ng-click="selectPath($index)" mi-absorb-clicks="" d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z" fill="inherit" stroke="inherit" stroke-width="inherit" stroke-linejoin="inherit" stroke-linecap="inherit" stroke-miterlimit="inherit" opacity="1">
+			</path>
+		</g>
+        <g ng-show="pref.showGrid" class="edit-grid ng-hide">
+            <g class="hLines"><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="0" mi-y2="0" y1="0" y2="0"></line><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="64" mi-y2="64" y1="64" y2="64"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="128" mi-y2="128" y1="128" y2="128"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="192" mi-y2="192" y1="192" y2="192"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="256" mi-y2="256" y1="256" y2="256"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="320" mi-y2="320" y1="320" y2="320"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="384" mi-y2="384" y1="384" y2="384"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="448" mi-y2="448" y1="448" y2="448"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="512" mi-y2="512" y1="512" y2="512"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="576" mi-y2="576" y1="576" y2="576"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="640" mi-y2="640" y1="640" y2="640"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="704" mi-y2="704" y1="704" y2="704"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="768" mi-y2="768" y1="768" y2="768"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="832" mi-y2="832" y1="832" y2="832"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="896" mi-y2="896" y1="896" y2="896"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="960" mi-y2="960" y1="960" y2="960"></line><!-- end ngRepeat: h in grid.hLines --><line ng-repeat="h in grid.hLines" x1="0" x2="100%" mi-y1="1024" mi-y2="1024" y1="1024" y2="1024"></line><!-- end ngRepeat: h in grid.hLines --></g>
+            <g class="vLines"><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="0" mi-x2="0" x1="0" x2="0"></line><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="64" mi-x2="64" x1="64" x2="64"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="128" mi-x2="128" x1="128" x2="128"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="192" mi-x2="192" x1="192" x2="192"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="256" mi-x2="256" x1="256" x2="256"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="320" mi-x2="320" x1="320" x2="320"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="384" mi-x2="384" x1="384" x2="384"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="448" mi-x2="448" x1="448" x2="448"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="512" mi-x2="512" x1="512" x2="512"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="576" mi-x2="576" x1="576" x2="576"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="640" mi-x2="640" x1="640" x2="640"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="704" mi-x2="704" x1="704" x2="704"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="768" mi-x2="768" x1="768" x2="768"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="832" mi-x2="832" x1="832" x2="832"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="896" mi-x2="896" x1="896" x2="896"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="960" mi-x2="960" x1="960" x2="960"></line><!-- end ngRepeat: v in grid.vLines --><line ng-repeat="v in grid.vLines" y1="0" y2="100%" mi-x1="1024" mi-x2="1024" x1="1024" x2="1024"></line><!-- end ngRepeat: v in grid.vLines --></g>
+        </g>
+		</svg></div>
+    <ul class="menu">
+
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+      <li>Forth Item</li>
+      <li>Fifth Item</li>
+    </ul>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
